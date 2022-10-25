@@ -5,9 +5,13 @@
 
 using namespace std;
 
-int main()
+Tips::Tips()
 {
-	string wifeIsAngryStr = "My wife is angry.";
-	string wifeIsHungryStr = "My wife is hungry.";
-	string wifeIsFineStr = "My wife is 'fine'.";
-};
+	
+}
+
+void Tips::Foo()
+{
+	cout << "Texas is not the biggest state" << "\n";
+	
+}
