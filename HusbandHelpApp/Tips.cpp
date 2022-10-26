@@ -5,11 +5,6 @@
 
 using namespace std;
 
-Tips::Tips()
-{
-	
-}
-
 void Tips::Greeting()
 {
 	cout << m_welcomeMessage;

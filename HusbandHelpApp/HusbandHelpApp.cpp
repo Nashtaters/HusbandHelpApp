@@ -8,15 +8,18 @@ int main()
     Tips* tips = new Tips();
 
     tips->Greeting();
-    IssueType typeOfIssue =  tips->SelectIssue();
-    tips->ShowAdvice(typeOfIssue);
 
+    bool playAgain = false;
+    do
+    {
+        IssueType typeOfIssue = tips->SelectIssue();
+        tips->ShowAdvice(typeOfIssue);
+
+        cout << endl << tips->m_loopingQuestion << endl;
+        cout << tips->m_questionResponse << endl;
+
+        int keepPlaying = tips->GetResponse();
         
-    // This is declaring objects on the heap
-    
-    
-
-    // This is declaring objects on the stack
-    //Tips tips2;
-    
+        playAgain = keepPlaying == 1 ? true : false;
+    } while (playAgain);
 }
