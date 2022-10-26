@@ -143,6 +143,7 @@
     <ClCompile Include="Tips.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IssueTypes.h" />
     <ClInclude Include="Tips.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

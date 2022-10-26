@@ -26,5 +26,8 @@
     <ClInclude Include="Tips.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IssueTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

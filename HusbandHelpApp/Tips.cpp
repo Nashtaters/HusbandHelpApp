@@ -1,7 +1,6 @@
-#include "Tips.h"
 #include <iostream>
-
 #include <string>
+#include "Tips.h"
 
 using namespace std;
 
@@ -10,8 +9,33 @@ Tips::Tips()
 	
 }
 
-void Tips::Foo()
+void Tips::Greeting()
 {
-	cout << "Texas is not the biggest state" << "\n";
+	cout << m_welcomeMessage;
 	
+}
+
+IssueType Tips::SelectIssue()
+{
+	cout << m_angryWifeString;
+	cout << m_sadWifeString;
+	cout << m_unsureWifeString;
+
+	int answer;
+
+	cin >> answer;
+	IssueType selection = (IssueType)answer;
+	/*switch (answer)
+	{
+	case angryWife:
+		break;
+	case sadWife:
+		break;
+	case unsureWife:
+		break;
+	case invalid:
+	default:
+		break;
+	}*/
+	return selection;
 }
