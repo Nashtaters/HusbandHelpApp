@@ -40,6 +40,11 @@ IssueType Tips::SelectIssue()
 	return selection;
 }
 
+
+/// <summary>
+/// Shows several questions that could be wrong with the users wife.
+/// </summary>
+/// <param name="issue"></param>
 void Tips::ShowAdvice(IssueType issue)
 {
 	string(&questionBank)[3] = issue == angryWife ? m_questionAngry : issue == sadWife ? m_questionSad : m_questionsUnsure;
@@ -82,6 +87,11 @@ void Tips::ShowAdvice(IssueType issue)
 	}
 }
 
+
+/// <summary>
+/// Gets a response from the user.  If 1 or 2 is not entered a loop will form until a valid 1 or 2 is entered.
+/// </summary>
+/// <returns></returns>
 int Tips::GetResponse()
 {
 	bool firstTime = true;
@@ -104,6 +114,12 @@ int Tips::GetResponse()
 	return numSelect;
 }
 
+
+/// <summary>
+/// Returns a random item from an array of answers depending on which branching the user goes down.
+/// </summary>
+/// <param name="issue"></param>
+/// <param name="number"></param>
 void Tips::ShowAnswers(IssueType issue, int number)
 {
 	int randomIndex = rand() % 3;
