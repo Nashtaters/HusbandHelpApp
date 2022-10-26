@@ -2,7 +2,7 @@
 
 enum IssueType
 {
-	angryWife,
+	angryWife = 1,
 	sadWife,
 	unsureWife,
 	invalid

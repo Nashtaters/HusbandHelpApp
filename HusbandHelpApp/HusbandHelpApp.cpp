@@ -9,6 +9,7 @@ int main()
 
     tips->Greeting();
     IssueType typeOfIssue =  tips->SelectIssue();
+    tips->ShowAdvice(typeOfIssue);
 
         
     // This is declaring objects on the heap
