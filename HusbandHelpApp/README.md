@@ -16,8 +16,8 @@ I used C++ and the standard libraries for this program.
 
 # Useful Websites
 
-* [Web Site Name](https://www.w3schools.com/)
-* [Web Site Name](https://stackoverflow.com/)
+* [W3Schools](https://www.w3schools.com/)
+* [Stack Overflow](https://stackoverflow.com/)
 
 # Future Work
 
